@@ -1,0 +1,16 @@
+const vocab = [
+    { word: "Aberration", meaning: "Something that deviates from normal" },
+    { word: "Benevolent", meaning: "Kind and generous" },
+    { word: "Candid", meaning: "Honest and straightforward" },
+    { word: "Diligent", meaning: "Hardworking and careful" },
+    { word: "Eloquent", meaning: "Fluent and persuasive speaker" },
+    { word: "Frugal", meaning: "Careful with money" },
+    { word: "Gratitude", meaning: "Feeling of thankfulness" }
+];
+
+function nextWord() {
+    const random = vocab[Math.floor(Math.random() * vocab.length)];
+
+    document.getElementById("word").innerText = random.word;
+    document.getElementById("meaning").innerText = random.meaning;
+}
